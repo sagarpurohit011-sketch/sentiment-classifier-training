@@ -1,3 +1,5 @@
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
 transformers>=4.45,<5
 torch==2.2.2+cpu
 python-dotenv>=1.0
