@@ -63,7 +63,7 @@ The image uses Uvicorn, binds to `0.0.0.0`, and honors the platform-provided `PO
 
 ## Deploy to Render
 
-The included `render.yaml` configures a native Python web service. It does not require Docker locally.
+The included `render.yaml` configures a native Python web service. It does not require Docker locally. Render installs the CPU-only Torch wheel to keep the free instance within its memory limit.
 
 1. Put this project in a GitHub repository, excluding `.env` and `.venv`.
 2. In Render, choose **New > Blueprint**, connect the repository, and select it.

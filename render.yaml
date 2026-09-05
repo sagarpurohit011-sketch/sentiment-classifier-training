@@ -3,7 +3,7 @@ services:
     name: sentiment-classifier
     runtime: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple -r requirements.txt
     startCommand: uvicorn classification_practice:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
